@@ -11,6 +11,8 @@ $verydark: hsl(229, 31%, 21%);
 
 body {
   width: 100%;
+  font-family: "Rubik", sans-serif;
+  
 }
 
 .navx {
@@ -41,6 +43,8 @@ body {
   text-transform: uppercase;
   font-size: $textsize;
   padding: 5px;
+  transition: all ease 0.7s;
+
 
   &:hover {
     background-color: $softred;
@@ -61,11 +65,14 @@ body {
 
   .hero-btn-second {
     background-color: $verydark;
+  transition: all ease 0.7s;
+
 
     &:hover {
       color: $softblue;
       border: 1px solid $verydark;
       background-color: #fff;
+
     }
   }
 }
@@ -79,8 +86,10 @@ p {
   height: 300px;
   background-color: #fff;
   box-shadow: inset;
-  background: $grayishblue;
   width: 75%;
+  box-shadow: 0 1.5em 2em 0em #999;
+  border-radius: 20px;
+  // margin:auto;
 }
 
 .hero-btn {
@@ -88,6 +97,8 @@ p {
   color: #fff;
   border-radius: 9px;
   //   width: 100px;
+  transition: all ease 0.8s;
+
 
   font-size: 15px;
   background-color: $softblue;
@@ -105,54 +116,88 @@ p {
   margin-top: 6rem;
 }
 
-.extension{
-
-  padding-bottom:100px;
+.extension {
+  padding-bottom: 100px;
 }
-.sub-footer{
-  background-color:$softblue;
-  width:100%;
-  height:300px;
-  color:#fff;
-  padding-top:50px;
+.sub-footer {
+  background-color: $softblue;
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  padding-top: 50px;
   padding-bottom: 50px;
 
-  .sub-btn{
-
-
+  .sub-btn {
     border: solid 2px $softblue;
     color: #fff;
     border-radius: 9px;
     //   width: 100px;
-  
+
     font-size: 15px;
     background-color: $softred;
     padding: 13px 30px 13px 30px;
     margin-right: 10px;
     font-weight: 500;
-
-
   }
 }
-::placeholder{
-  font-size:15px;
-  color:$grayishblue;
+::placeholder {
+  font-size: 15px;
+  color: $grayishblue;
 }
 
-footer{
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+background-color: $verydark;
+  text-align: center;
 
-  padding-top:50px;
+  p {
+    
+    text-transform: uppercase;
+    margin: 0px 30px 30px 30px;
+    
 
-  ul{
-    list-style-type: none;
+    font-size: $textsize;
+    text-align: center;
+    color: #fff;
 
-    li{
-
-      display: inline;
-      text-transform: uppercase;
-      margin-left: 30px;
-      font-size: $textsize;
+    &:hover {
+      color: $softred;
     }
   }
-  
+}
+//questions style
+
+.questions .card {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+.questions .card .card-header {
+  background-color: transparent;
+}
+.questions .card .btn {
+  position: relative;
+}
+.questions .card .btn:hover {
+  color: $softred;
+}
+.questions .card .btn::before {
+  content: "";
+  background: url("../images/icon-arrow.svg") no-repeat center;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.questions .card .btn.active{
+  color: $softred;
+}
+.questions .card .btn.active::before {
+  transform: translateY(-50%) rotate(180deg);
+  filter: hue-rotate(115deg);
 }
