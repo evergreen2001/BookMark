@@ -67,14 +67,16 @@ body {
   }
 
   .hero-btn-second {
-    background-color: $verydark;
+    background-color: $grayishblue;
   transition: all ease 0.7s;
+  border:$verydark;
 
 
     &:hover {
       color: $softblue;
       border: 1px solid $verydark;
       background-color: #fff;
+
 
     }
   }
@@ -217,4 +219,33 @@ background-color: $verydark;
   color: var(--dark);
   background: transparent;
   border-bottom: 2px solid $softred;
+}
+@media screen and (max-width: 991px) {
+  /* menu */
+  .navbar-light .navbar-nav .nav-link.active {
+    margin-left: 0;
+  }
+  /* content home */
+  .hero-area div:first-child {
+    order: 2;
+    text-align: center;
+  }
+
+  .hero-area div:last-child {
+    order: 1;
+  }
+  /* Features */
+  .features__content {
+    text-align: center;
+  }
+  /* Extension */
+  .extension__content div article {
+    margin-top: 0 !important;
+  }
+
+  .features__content .nav-pills {
+
+
+    display:block
+  }
 }

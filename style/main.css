@@ -66,9 +66,10 @@ body {
 }
 
 .hero-area .hero-btn-second {
-  background-color: #252b46;
+  background-color: #9194a1;
   -webkit-transition: all ease 0.7s;
   transition: all ease 0.7s;
+  border: #252b46;
 }
 
 .hero-area .hero-btn-second:hover {
@@ -233,5 +234,35 @@ footer p:hover {
   color: var(--dark);
   background: transparent;
   border-bottom: 2px solid #fa5757;
+}
+
+@media screen and (max-width: 991px) {
+  /* menu */
+  .navbar-light .navbar-nav .nav-link.active {
+    margin-left: 0;
+  }
+  /* content home */
+  .hero-area div:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .hero-area div:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* Features */
+  .features__content {
+    text-align: center;
+  }
+  /* Extension */
+  .extension__content div article {
+    margin-top: 0 !important;
+  }
+  .features__content .nav-pills {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
