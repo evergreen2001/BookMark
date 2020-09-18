@@ -53,6 +53,9 @@ body {
     border: solid 2px;
   }
 }
+.navbar-nav {
+  align-items: center;
+}
 
 .hero-area {
   padding-top: 130px;
@@ -200,4 +203,18 @@ background-color: $verydark;
 .questions .card .btn.active::before {
   transform: translateY(-50%) rotate(180deg);
   filter: hue-rotate(115deg);
+}
+
+
+//features
+.features__content .nav-pills .nav-link {
+  color: rgb(145, 148, 161);;
+  padding: 1.4em 2em;
+  border-radius: 0;
+  border-bottom: 2px solid rgb(218, 218, 218);;
+}
+.features__content .nav-pills .nav-link.active {
+  color: var(--dark);
+  background: transparent;
+  border-bottom: 2px solid $softred;
 }
