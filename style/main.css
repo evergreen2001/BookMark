@@ -10,27 +10,25 @@ body {
 
 .navx {
   background-color: #fff;
-}
-
-.navx a {
-  color: black;
+  padding: 20px 90px 10px 90px;
 }
 
 .navx a:hover {
   color: #fa5757;
 }
 
-.navx .nav-item {
+.navx .nav-item .nav-link {
   margin-left: 30px;
   text-transform: uppercase;
   font-size: 18px;
 }
 
-.navx .nav-item:hover {
+.navx .nav-item .nav-link:hover {
   color: #fa5757;
 }
 
 .btn-nav {
+  margin-left: 30px;
   border: solid 2px;
   color: #fa5757;
   border-radius: 5px;
@@ -81,17 +79,6 @@ body {
 p {
   font-size: 18px;
   color: #9194a1;
-}
-
-.cardx {
-  height: 300px;
-  background-color: #fff;
-  -webkit-box-shadow: inset;
-          box-shadow: inset;
-  width: 75%;
-  -webkit-box-shadow: 0 1.5em 2em 0em #999;
-          box-shadow: 0 1.5em 2em 0em #999;
-  border-radius: 20px;
 }
 
 .hero-btn {
@@ -237,6 +224,10 @@ footer p:hover {
 }
 
 @media screen and (max-width: 991px) {
+  .navx {
+    background-color: #fff;
+    padding: 10px;
+  }
   /* menu */
   .navbar-light .navbar-nav .nav-link.active {
     margin-left: 0;
